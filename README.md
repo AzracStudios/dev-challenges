@@ -37,7 +37,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](/public/screenshot.png)
 
 This app is built using the Svelte framework and is hosted on Netlify. You can view the demo on https://country-quiz-devchallenge.netlify.app. I had a really fun experience building this app, especially with a 2 hour time limit that I gave my self. And this is the first time I am using Svelte for a project, so learning Svelte from scratch was a part of the process. Overall, building simple apps like these can really help in learning a framework.
 

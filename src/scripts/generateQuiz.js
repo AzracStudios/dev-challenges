@@ -29,7 +29,7 @@ export default function GenerateQuiz(allCountries) {
   const positionOfCorrectAnswer = Math.floor(
     Math.random() * (countOfAnswers)
   );
-  console.log(positionOfCorrectAnswer)
+  
   const answers = [];
 
   for (let i = 0; i < countOfAnswers; i++) {

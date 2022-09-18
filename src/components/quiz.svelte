@@ -45,8 +45,6 @@
   };
 
   const handleBtnClick = () => {
-    console.log(quiz.answer);
-
     if (btnMode === 0) {
       if (selected === quiz.answer) {
         right = quiz.answer;
@@ -238,7 +236,6 @@
     }
 
     .results {
-
       display: flex;
       flex-direction: column;
       align-items: center;
