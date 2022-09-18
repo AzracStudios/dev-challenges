@@ -38,6 +38,7 @@
     left: 0px;
 
     width: 140vw;
+    height: 100vh;
     z-index: -99;
     object-fit: cover;
   }
