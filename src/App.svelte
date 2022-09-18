@@ -38,7 +38,7 @@
     left: 0px;
 
     width: 140vw;
-    height: 100vh;
+    height: 140vh;
     z-index: -99;
     object-fit: cover;
   }
