@@ -3,8 +3,7 @@
   import GenerateQuiz from "../scripts/generateQuiz";
   import CacheCountryList from "../scripts/cacheCountryList";
   import { onMount } from "svelte";
-  import Results from "./results.svelte";
-
+  
   $: selected = null;
   $: right = null;
   $: wrong = null;
