@@ -1,107 +1,87 @@
-# This repo is no longer maintained. Consider using `npm init vite` and selecting the `svelte` option or — if you want a full-fledged app framework and don't mind using pre-1.0 software — use [SvelteKit](https://kit.svelte.dev), the official application framework for Svelte.
+<!-- Please update value in the {}  -->
 
----
+<h1 align="center">Country Quiz App</h1>
 
-# svelte app
+<div align="center">
+   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+</div>
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+<div align="center">
+  <h3>
+    <a href="https://country-quiz-devchallenge.netlify.app/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/AzracStudios/devChallenges">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenges/Bu3G2irnaXmfwQ8sZkw8">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+<!-- TABLE OF CONTENTS -->
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+## Table of Contents
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [How to use](#how-to-use)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
+<!-- OVERVIEW -->
 
-## Get started
+## Overview
 
-Install the dependencies...
+![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
 
-```bash
-cd svelte-app
-npm install
-```
+This app is built using the Svelte framework and is hosted on Netlify. You can view the demo on https://country-quiz-devchallenge.netlify.app. I had a really fun experience building this app, especially with a 2 hour time limit that I gave my self. And this is the first time I am using Svelte for a project, so learning Svelte from scratch was a part of the process. Overall, building simple apps like these can really help in learning a framework.
 
-...then start [Rollup](https://rollupjs.org):
+### Built With
 
-```bash
-npm run dev
-```
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+- [Svelte](https://svelte.dev/)
+- [Sass](https://sass-lang.com/)
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+## Features
 
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
+<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-## Building and running in production mode
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/Bu3G2irnaXmfwQ8sZkw8) was to build an application to complete the given user stories.
 
-To create an optimised version of the app:
+On loading the app for the first time, the results from [RestCountries](https://restcountries.com/v3.1/all) is cached on localStorage. On subsequent loads, the data is then taken from the cache instead of making a request to RestCountries everytime.
 
-```bash
-npm run build
-```
+## How To Use
 
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
-
-
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-## Using TypeScript
-
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
+To view the source of this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
-node scripts/setupTypeScript.js
+# Clone this repository
+$ git clone https://github.com/your-user-name/your-project-name
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm start
 ```
 
-Or remove the script via:
+To view the demo, go to https://country-quiz-devchallenge.netlify.app
 
-```bash
-rm scripts/setupTypeScript.js
-```
+## Acknowledgements
 
-If you want to use `baseUrl` or `path` aliases within your `tsconfig`, you need to set up `@rollup/plugin-alias` to tell Rollup to resolve the aliases. For more info, see [this StackOverflow question](https://stackoverflow.com/questions/63427935/setup-tsconfig-path-in-svelte).
+<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
-## Deploying to the web
+- [RestCountries Docs](https://restcountries.com/#rest-countries)
+- [Svelte Docs](https://svelte.dev/docs)
+- [Use Sass With Svelte](https://dev.to/mefaba/how-to-use-scss-with-svelte-4c6o)
 
-### With [Vercel](https://vercel.com)
+## Contact
 
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-vercel deploy --name my-project
-```
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+- Website [your-website.com](https://country-quiz-devchallenge.netlify.app)
+- GitHub [@your-username](https://github.com/AzracStudios)
